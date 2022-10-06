@@ -3,3 +3,16 @@
 // 456 -> 46
 // 782 -> 72
 //918 -> 98
+
+Console.Clear();
+
+int a = new Random().Next(100, 1000);
+
+Console.WriteLine($"Сгенерировано число {a}");
+int a3 = a % 10; // последнее цифра
+int a2 = a / 10 % 10; // вторая цифра
+int result = a / 10 - a2 + a3;
+
+Console.WriteLine($"Вторая цифра в числе {a2}");
+Console.WriteLine($"Результат задачи {result}");
+Console.WriteLine();
